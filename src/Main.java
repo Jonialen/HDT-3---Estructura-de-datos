@@ -9,7 +9,6 @@ public class Main {
         QuickSort quickSort = new QuickSort();
         RadixSort radixSort = new RadixSort();
         BubbleSort bubbleSort = new BubbleSort();
-        int a;
         System.out.println("Iniciar ");
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
