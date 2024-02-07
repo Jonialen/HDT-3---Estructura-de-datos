@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,11 +8,20 @@ public class Main {
         MergeSort mergeSort = new MergeSort();
         QuickSort quickSort = new QuickSort();
         RadixSort radixSort = new RadixSort();
+        BubbleSort bubbleSort = new BubbleSort();
+        int a;
+        System.out.println("Iniciar ");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+
         for (int size = 10; size <= 3000; size++) {
             int[] arr = new int[size];
             for (int i = 0; i < size; i++) {
-                arr[i] = random.nextInt(1000); // Genera números aleatorios entre 0 y 999
+                arr[i] = random.nextInt(1000);
             }
+            // Bubble Sort
+            int[] arrCopyBubble = arr.clone();
+            bubbleSort.sort(arrCopyBubble);
 
             // Gnome Sort
             int[] arrCopyGnome = arr.clone();
@@ -32,5 +42,6 @@ public class Main {
             int[] arrCopyRadix = arr.clone();
             radixSort.sort(arrCopyRadix);
         }
+        System.out.println();
     }
 }
