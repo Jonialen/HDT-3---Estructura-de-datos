@@ -1,3 +1,17 @@
+/**
+ * Clase que implementa el algoritmo de ordenamiento Merge Sort.
+ * 
+ * <p>
+ * El Merge Sort es un algoritmo de ordenamiento eficiente que utiliza el
+ * enfoque de dividir y conquistar. Divide repetidamente el arreglo en mitades
+ * hasta que cada subarreglo contenga un solo elemento, luego combina los
+ * subarreglos en orden hasta que el arreglo completo esté ordenado.
+ * </p>
+ * 
+ * <p>
+ * Programadores: Anggie Quezada y Jonathan Diaz
+ * </p>
+ */
 class MergeSort {
     public void sort(int[] arr) {
         sort(arr, 0, arr.length - 1);

@@ -1,3 +1,18 @@
+/**
+ * Clase que implementa el algoritmo de ordenamiento Quick Sort.
+ * 
+ * <p>
+ * El Quick Sort es un algoritmo de ordenamiento eficiente que utiliza el
+ * enfoque de dividir y conquistar. Selecciona un elemento pivote y reorganiza
+ * los elementos del arreglo de manera que los elementos menores al pivote
+ * estén a su izquierda y los mayores a su derecha. Luego, aplica recursión
+ * sobre los subarreglos izquierdo y derecho del pivote.
+ * </p>
+ * 
+ * <p>
+ * Programadores: Anggie Quezada y Jonathan Diaz
+ * </p>
+ */
 public class QuickSort implements SortAlgorithm {
     @Override
     public <T extends Comparable<T>> void sort(T[] arr) {

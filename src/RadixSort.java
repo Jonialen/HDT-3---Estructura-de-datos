@@ -1,8 +1,23 @@
 import java.util.Arrays;
 
+/**
+ * Clase que implementa el algoritmo de ordenamiento Radix Sort.
+ * 
+ * <p>
+ * El Radix Sort es un algoritmo de ordenamiento no comparativo que ordena los
+ * elementos por sus dígitos individuales, comenzando por el dígito menos
+ * significativo y moviéndose hacia el más significativo. Utiliza el método de
+ * ordenamiento por conteo para ordenar los dígitos.
+ * </p>
+ * 
+ * <p>
+ * Programadores: Anggie Quezada y Jonathan Diaz
+ * </p>
+ */
 class RadixSort {
     public void sort(int[] arr) {
-        if (arr.length == 0) return;
+        if (arr.length == 0)
+            return;
         int max = Arrays.stream(arr).max().getAsInt();
         for (int exp = 1; max / exp > 0; exp *= 10) {
             countSort(arr, exp);
